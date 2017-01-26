@@ -48,14 +48,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="16D-ZZ-i7D">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="16D-ZZ-i7D" customClass="PokeCell" customModule="pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-z9-4oG">
+                                                <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-z9-4oG">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -81,6 +81,10 @@
                                             <constraint firstItem="LBe-zU-bcA" firstAttribute="top" secondItem="dbN-z9-4oG" secondAttribute="bottom" id="rrq-JR-hBT"/>
                                             <constraint firstItem="dbN-z9-4oG" firstAttribute="top" secondItem="16D-ZZ-i7D" secondAttribute="top" id="zX6-lY-piF"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="LBe-zU-bcA" id="RFv-dB-Hxw"/>
+                                            <outlet property="thumbImg" destination="dbN-z9-4oG" id="0LT-gh-Rbs"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
