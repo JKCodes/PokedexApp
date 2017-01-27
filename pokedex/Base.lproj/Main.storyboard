@@ -182,6 +182,9 @@
                                             <constraint firstAttribute="height" constant="23" id="yc2-sJ-4H5"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="r4P-89-90n" eventType="touchUpInside" id="kF7-4w-EQh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -519,7 +522,22 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="cF2-DG-z87" id="ya2-PW-UcU"/>
+                        <outlet property="currentEvoImg" destination="GLX-JG-o04" id="diL-kj-qhh"/>
+                        <outlet property="defenseLbl" destination="SeA-O3-3gR" id="NVG-pV-Ytt"/>
+                        <outlet property="descriptionLbl" destination="egl-Sl-pdq" id="Pb2-Kg-siz"/>
+                        <outlet property="evolutionLbl" destination="equ-Br-LCN" id="Ng3-b1-mwq"/>
+                        <outlet property="heightLbl" destination="CeB-Si-VqS" id="kAE-rH-wYN"/>
+                        <outlet property="hpLbl" destination="PlG-Fp-SHS" id="PTJ-DA-803"/>
+                        <outlet property="idLbl" destination="7h6-N7-oWq" id="hVr-C9-Xhl"/>
+                        <outlet property="mainImg" destination="L2A-1k-5Qb" id="Q1I-KK-cRr"/>
                         <outlet property="nameLbl" destination="TVM-LD-8nR" id="k4h-pQ-PYg"/>
+                        <outlet property="nextEvoImg" destination="29U-fp-4BX" id="mqu-7b-TTy"/>
+                        <outlet property="spatkLbl" destination="iLt-1R-YsB" id="eTg-Z1-Cyd"/>
+                        <outlet property="spdefLbl" destination="bBn-ah-Grd" id="M79-fa-SyW"/>
+                        <outlet property="speedLbl" destination="bYR-LR-NGA" id="OPz-e3-MEE"/>
+                        <outlet property="typeLbl" destination="gGg-Vj-V8D" id="PH4-1E-lvh"/>
+                        <outlet property="weightLbl" destination="Vph-g3-wGL" id="XY8-Ca-c1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0o-mU-hDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
